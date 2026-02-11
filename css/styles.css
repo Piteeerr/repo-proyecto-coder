@@ -1,0 +1,217 @@
+/* =====================
+   RESET / BASE
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2f3a2f;
+}
+
+/* =====================
+   LAYOUT GLOBAL
+===================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #2f3a2f;
+  padding: 1.5rem 3rem;
+}
+
+main {
+  display: block;
+  padding: 2rem;
+}
+
+footer {
+  background-color: lightgray;
+  font-style: italic;
+  color: blueviolet;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* =====================
+   NAVEGACIÓN GLOBAL
+===================== */
+.navbar {
+  background-color: #2f3a2f;
+}
+
+.navbar .nav-link{
+  color: #e6d8a2;
+}
+
+.navbar .nav-link:hover{
+  color: #bfae70;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+/* =====================
+   COMPONENTES GLOBALES
+===================== */
+.titulo {
+  color: #e6d8a2;
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 2px;
+  border: cornsilk double 7px;
+}
+
+.subTitulo {
+  color: #bfae70;
+  text-align: center;
+  text-decoration: underline;
+  margin: 1rem 0 1rem 0;
+}
+
+.descripcion{
+  color: darkgoldenrod;
+  text-align: center;
+}
+
+.secciones {
+  background-color: #ebe1d9;
+  margin: 0 6px 0 6px;
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+
+/* =====================
+   ELEMENTOS GLOBALES
+===================== */
+.logo {
+  width: 10rem;
+}
+
+img {
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* =====================
+   VIDEO RESPONSIVE GLOBAL
+===================== */
+video {
+  
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+/* =====================
+   PÁGINA: INDEX
+===================== */
+
+.layout-index{
+  display: grid;
+  gap: 3rem;
+}
+
+.layout-index .destacado{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.destacado .galeria{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.galeria img{
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  width: 95%;
+}
+
+@media (max-width: 767px){
+  .destacado .galeria{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =====================
+   PÁGINA: PRODUCTOS
+===================== */
+
+.layout-productos{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "titulo"
+  "productos";
+  gap: 2rem;
+}
+
+.layout-productos .titulo{
+  grid-area: titulo;
+}
+
+.layout-productos .productos{
+  grid-area: productos;
+}
+
+.categoria-productos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.categoria-productos .subTitulo{
+  grid-column: 1/-1;
+}
+
+.producto{
+  background-color: #ffff;
+  padding: 1.5rem;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 767px){
+  .categoria-productos{
+    grid-template-columns: 1fr;
+    margin-top: 5px;
+  }
+}
+
+/* =====================
+   PÁGINA: CONTACTO
+===================== */
+/* estilos específicos de formulario */
+
+/* =====================
+   PÁGINA: CATEGORÍAS
+===================== */
+
+/* =====================
+   PÁGINA: OFERTAS
+===================== */
+
+/* =====================
+   RESPONSIVE GLOBAL
+===================== */
+@media (max-width: 767px) {
+  header {
+    display: flex;
+    gap: 1.5rem;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
