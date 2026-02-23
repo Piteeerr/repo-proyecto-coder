@@ -61,6 +61,10 @@ footer {
   font-weight: normal;
   letter-spacing: 2px;
   border: cornsilk double 7px;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  overflow-wrap: break-word;
 }
 
 .subTitulo {
@@ -208,5 +212,10 @@ video {
     text-align: center;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .titulo{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
   }
 }
