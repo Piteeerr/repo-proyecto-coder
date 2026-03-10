@@ -1,0 +1,89 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+%card{
+  background-color:white;
+  border-radius:$radio;
+  padding:1.5rem;
+}
+
+.navbar{
+  background-color:$color-fondo;
+
+  .nav-link{
+    color:$color-titulo;
+
+    &:hover{
+      color:$color-subtitulo;
+    }
+  }
+}
+
+.titulo{
+  color:$color-titulo;
+  text-align:center;
+  font-weight:normal;
+  letter-spacing:2px;
+  border:cornsilk double 7px;
+  padding:0.5rem;
+}
+
+.subTitulo{
+  color:$color-subtitulo;
+  text-align:center;
+  text-decoration:underline;
+  margin:1rem 0;
+}
+
+.descripcion{
+  color:$color-descripcion;
+  text-align:center;
+}
+
+.secciones{
+  background-color:$color-seccion;
+  margin:0 6px;
+  padding:1.5rem;
+  border-radius:$radio;
+}
+
+.logo{
+  width:10rem;
+  animation: aparecerLogo 1s ease;
+}
+
+@keyframes aparecerLogo{
+
+  from{
+    opacity:0;
+    transform:translateY(-20px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+}
+
+img{
+  border-radius:4px;
+  @include sombra;
+}
+
+video{
+  display:block;
+  width:100%;
+  max-width:500px;
+  height:auto;
+  margin:0 auto;
+}
+
+.btn{
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  &:hover{
+    transform:translateY(-3px);
+    box-shadow:0 6px 12px rgba(0,0,0,0.2);
+  }
+}

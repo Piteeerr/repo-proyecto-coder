@@ -1,0 +1,67 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.layout-productos{
+  display:grid;
+  grid-template-columns:1fr;
+  grid-template-areas:
+  "titulo"
+  "productos";
+  gap:2rem;
+
+  .titulo{
+    grid-area:titulo;
+  }
+
+  .productos{
+    grid-area:productos;
+  }
+}
+
+.categoria-productos{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1.5rem;
+
+  .subTitulo{
+    grid-column:1/-1;
+  }
+}
+
+.producto{
+  @extend %card;
+
+  text-align:center;
+  @include sombra;
+
+  animation: aparecerProducto 0.8s ease;
+
+  transition: transform 0.3s;
+
+  &:hover{
+    transform:scale(1.05);
+  }
+}
+
+@keyframes aparecerProducto{
+
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+}
+
+@media(max-width:767px){
+
+  .categoria-productos{
+    grid-template-columns:1fr;
+    margin-top:5px;
+  }
+
+}

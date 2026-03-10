@@ -1,0 +1,33 @@
+.layout-index{
+  display:grid;
+  gap:3rem;
+
+  .destacado{
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+
+    .galeria{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:1.5rem;
+      justify-items:center;
+
+      img{
+        width:95%;
+      }
+    }
+  }
+}
+
+@media(max-width:767px){
+
+  .destacado{
+
+    .galeria{
+      grid-template-columns:1fr;
+    }
+
+  }
+
+}
