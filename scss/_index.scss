@@ -22,10 +22,14 @@
 
 @media(max-width:767px){
 
-  .destacado{
+  .layout-index{
 
-    .galeria{
-      grid-template-columns:1fr;
+    .destacado{
+
+      .galeria{
+        grid-template-columns:1fr;
+      }
+
     }
 
   }
