@@ -15,28 +15,25 @@
 
     <!-- link css propio -->
     <link rel="stylesheet" href="../css/styles.css" />
-    
   </head>
 
   <body>
     <header>
       <img src="../img/logo.jpg" alt="" />
-      
+
       <nav class="navbar navbar-expand-md navbar-dark">
-
         <div class="container-fluid">
-
-          <button 
+          <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#menuNav"
             aria-controls="menuNav"
             aria-expanded="false"
-            aria-label="Toggle navigation">
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-
 
           <div class="collapse navbar-collapse" id="menuNav">
             <ul class="navbar-nav ms-auto">
@@ -45,9 +42,6 @@
               </li>
               <li class="nav-item">
                 <a href="productos.html" class="nav-link">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a href="ofertas.html" class="nav-link">Ofertas</a>
               </li>
               <li class="nav-item">
                 <a href="contacto.html" class="nav-link">Contacto</a>
@@ -61,28 +55,65 @@
       </nav>
     </header>
 
-    <main>
-      <h1 class="titulo">TIENDA ONLINE DE EJEMPLO</h1>
+    <main class="layout-about">
 
-      <section class="secciones">
-        <h2 class="subTitulo">Quiénes Somos</h2>
-        <p>
-          Somos una tienda dedicada a ofrecer imágenes de alta calidad para todo
-          tipo de proyectos creativos.
-        </p>
+      <section class="about-section">
+        <div class="about-imagen">
+          <img src="../img/persona1.jpeg" alt="Nuestra colección" />
+        </div>
+
+        <div class="about-texto">
+          <h1 class="titulo-about">Nuestra colección</h1>
+
+          <div class="about-parrafos">
+            <p>
+              Nuestra colección en acero blanco combina brillo, elegancia y
+              armonía que se adapta a cualquier look. Cada pieza está pensada
+              para realzar la luz natural de la piel y destacar tus rasgos.
+            </p>
+
+            <p>
+              El acero blanco mantiene su color, no se oxida y conserva ese
+              acabado luminoso que convierte cualquier detalle en un toque
+              único. Desde piezas delicadas hasta diseños más llamativos.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section reverse">
+        <div class="about-imagen">
+          <img src="../img/persona2.jpeg" alt="Diseño y estilo" />
+        </div>
+
+        <div class="about-texto">
+          <h2 class="titulo-about">Diseño y estilo</h2>
+
+          <div class="about-parrafos">
+            <p>
+              Desde piezas delicadas hasta diseños más llamativos, nuestra
+              colección invita a jugar con combinaciones y encontrar tu propio
+              estilo.
+            </p>
+
+            <p>
+              Buscamos que cada accesorio acompañe tanto los días cotidianos
+              como los momentos más especiales, aportando elegancia y
+              personalidad.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
-
     <footer>
       <p>Instagram: @valeriajewelry.vj</p>
       <p>Teléfono: +54 9 11 5064-4921</p>
     </footer>
-    
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-
   </body>
 </html>

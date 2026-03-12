@@ -1,0 +1,75 @@
+@use "variables" as *;
+
+.layout-about {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-imagen {
+  border: 4px double $color-dorado;
+  padding: 10px;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.about-texto{
+
+  display:flex;
+  flex-direction:column;
+  gap:1.5rem;
+
+  background:#f8f8f8;
+  padding:1.5rem;
+  border-radius:6px;
+  border:1px solid rgba(0,0,0,0.1);
+
+}
+.titulo-about {
+  font-size: 2rem;
+  font-style: italic;
+  color: $color-dorado;
+}
+
+.about-parrafos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  p {
+    line-height: 1.6;
+  }
+}
+
+@media (min-width: 768px) {
+  .layout-about {
+    .about-section {
+      flex-direction: row;
+      align-items: center;
+      gap: 3rem;
+    }
+
+    .about-parrafos {
+      flex-direction: row;
+      gap: 2rem;
+
+      p {
+        flex: 1;
+      }
+    }
+
+    .reverse {
+      flex-direction: row-reverse;
+    }
+  }
+}

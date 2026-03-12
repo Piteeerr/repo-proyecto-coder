@@ -46,9 +46,6 @@
                 <a href="productos.html" class="nav-link">Productos</a>
               </li>
               <li class="nav-item">
-                <a href="ofertas.html" class="nav-link">Ofertas</a>
-              </li>
-              <li class="nav-item">
                 <a href="#" class="nav-link">Contacto</a>
               </li>
               <li class="nav-item">
@@ -60,28 +57,52 @@
       </nav>
     </header>
 
-    <main>
-      <h1 class="titulo">TIENDA ONLINE DE EJEMPLO</h1>
+<main class="layout-contacto">
 
-      <section class="secciones">
-        <h2 class="subTitulo">Contactanos</h2>
-        <p>Completá el formulario y nos comunicaremos con vos.</p>
+  <h1 class="titulo">TIENDA ONLINE DE EJEMPLO</h1>
 
-        <form action="/submit" method="post">
-          <label for="nombre">Nombre:</label><br />
-          <input type="text" name="nombre" id="nombre" /><br /><br />
+  <section class="contacto-container">
 
-          <label for="email">E-mail:</label><br />
-          <input type="email" name="email" id="email" /><br /><br />
+    <div class="contacto-form">
 
-          <label for="mensaje">Mensaje:</label><br />
-          <textarea name="mensaje" id="mensaje"></textarea><br /><br />
+      <h2 class="subTitulo">Contactanos</h2>
+      <p>Completá el formulario y nos comunicaremos con vos.</p>
 
-          <input type="submit" value="Enviar" />
-        </form>
-      </section>
-    </main>
+      <form action="/submit" method="post">
 
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre">
+        </div>
+
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email">
+        </div>
+
+        <div class="campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea name="mensaje" id="mensaje"></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+
+      </form>
+
+    </div>
+
+    <div class="contacto-info">
+
+      <h2 class="subTitulo">Información</h2>
+
+      <p><strong>Teléfono:</strong> +54 9 11 5064-4921</p>
+      <p><strong>Instagram:</strong> @valeriajewelry.vj</p>
+
+    </div>
+
+  </section>
+
+</main>
     <footer>
       <p>Instagram: @valeriajewelry.vj</p>
       <p>Teléfono: +54 9 11 5064-4921</p>
