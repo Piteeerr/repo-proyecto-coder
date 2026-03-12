@@ -22,20 +22,18 @@
       <img src="../img/logo.jpg" alt="" />
 
       <nav class="navbar navbar-expand-md navbar-dark">
-
         <div class="container-fluid">
-
-          <button 
+          <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#menuNav"
             aria-controls="menuNav"
             aria-expanded="false"
-            aria-label="Toggle navigation">
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-
 
           <div class="collapse navbar-collapse" id="menuNav">
             <ul class="navbar-nav ms-auto">
@@ -57,52 +55,43 @@
       </nav>
     </header>
 
-<main class="layout-contacto">
+    <main class="layout-contacto">
+      <h1 class="titulo">Valeria Jewelry</h1>
 
-  <h1 class="titulo">TIENDA ONLINE DE EJEMPLO</h1>
+      <section class="contacto-container">
+        <div class="contacto-form">
+          <h2 class="subTitulo">Contactanos</h2>
+          <p>Completá el formulario y nos comunicaremos con vos.</p>
 
-  <section class="contacto-container">
+          <form action="/submit" method="post">
+            <div class="campo">
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" id="nombre" />
+            </div>
 
-    <div class="contacto-form">
+            <div class="campo">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" />
+            </div>
 
-      <h2 class="subTitulo">Contactanos</h2>
-      <p>Completá el formulario y nos comunicaremos con vos.</p>
+            <div class="campo">
+              <label for="mensaje">Mensaje</label>
+              <textarea name="mensaje" id="mensaje"></textarea>
+            </div>
 
-      <form action="/submit" method="post">
-
-        <div class="campo">
-          <label for="nombre">Nombre</label>
-          <input type="text" name="nombre" id="nombre">
+            <button type="submit">Enviar</button>
+          </form>
         </div>
 
-        <div class="campo">
-          <label for="email">E-mail</label>
-          <input type="email" name="email" id="email">
+        <div class="contacto-info">
+          <h2 class="subTitulo">Información</h2>
+
+          <p><strong>Teléfono:</strong> +54 9 11 5064-4921</p>
+          <p><strong>Instagram:</strong> @valeriajewelry.vj</p>
+          <p><strong>Medios de Pago:</strong> Mercado Pago - Transferencia Bancaria - Efectivo</p>
         </div>
-
-        <div class="campo">
-          <label for="mensaje">Mensaje</label>
-          <textarea name="mensaje" id="mensaje"></textarea>
-        </div>
-
-        <button type="submit">Enviar</button>
-
-      </form>
-
-    </div>
-
-    <div class="contacto-info">
-
-      <h2 class="subTitulo">Información</h2>
-
-      <p><strong>Teléfono:</strong> +54 9 11 5064-4921</p>
-      <p><strong>Instagram:</strong> @valeriajewelry.vj</p>
-
-    </div>
-
-  </section>
-
-</main>
+      </section>
+    </main>
     <footer>
       <p>Instagram: @valeriajewelry.vj</p>
       <p>Teléfono: +54 9 11 5064-4921</p>
@@ -113,6 +102,5 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    
   </body>
 </html>
