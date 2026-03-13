@@ -179,6 +179,12 @@ video {
   transform: scale(1.05);
 }
 
+.producto img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 @keyframes aparecerProducto {
   from {
     opacity: 0;
