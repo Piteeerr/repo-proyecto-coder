@@ -36,6 +36,7 @@ footer {
   padding: 1rem;
 }
 
+/* Responsive Mobile */
 @media (max-width: 767px) {
   header {
     display: flex;
@@ -47,6 +48,15 @@ footer {
   .titulo {
     font-size: 1.5rem;
     letter-spacing: 1px;
+  }
+}
+/* Responsive Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    padding: 1.5rem 2rem;
+  }
+  main {
+    padding: 1.5rem;
   }
 }
 .navbar {
@@ -142,9 +152,21 @@ video {
   width: 95%;
 }
 
+/* Responsive Mobile */
 @media (max-width: 767px) {
   .layout-index .destacado .galeria {
     grid-template-columns: 1fr;
+  }
+}
+/* Responsive Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .layout-index .destacado .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .layout-index .destacado .galeria img:last-child {
+    grid-column: 1/-1;
+    width: 50%;
   }
 }
 .layout-productos {
@@ -195,13 +217,19 @@ video {
     transform: translateY(0);
   }
 }
+/* Responsive Mobile */
 @media (max-width: 767px) {
   .categoria-productos {
     grid-template-columns: 1fr;
     margin-top: 5px;
   }
 }
-/* Hecho de una manera diferente a modo de practica, hago para mobile y el responsive es para desktop */
+/* Responsive Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .categoria-productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .layout-about {
   padding: 2rem;
   display: flex;
@@ -249,7 +277,23 @@ video {
   line-height: 1.6;
 }
 
-@media (min-width: 768px) {
+/* Responsive Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .layout-about .about-section {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+  .layout-about .about-parrafos {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .layout-about .reverse {
+    flex-direction: row-reverse;
+  }
+}
+/* Responsive Desktop */
+@media (min-width: 1024px) {
   .layout-about .about-section {
     flex-direction: row;
     align-items: center;
@@ -335,7 +379,20 @@ button:hover {
   background: #f8f8f8;
 }
 
-@media (min-width: 768px) {
+/* Responsive Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contacto-container {
+    flex-direction: column;
+  }
+  .contacto-form {
+    flex: none;
+  }
+  .contacto-info {
+    flex: none;
+  }
+}
+/* Responsive Desktop */
+@media (min-width: 1023px) {
   .contacto-container {
     flex-direction: row;
   }

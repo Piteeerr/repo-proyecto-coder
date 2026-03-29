@@ -63,6 +63,7 @@
 
 }
 
+/* Responsive Mobile */
 @media(max-width:767px){
 
   .categoria-productos{
@@ -70,4 +71,11 @@
     margin-top:5px;
   }
 
+}
+
+/* Responsive Tablet */
+@media (min-width: 768px) and (max-width: 1023px){
+  .categoria-productos{
+    grid-template-columns: repeat(2,1fr);
+  }
 }

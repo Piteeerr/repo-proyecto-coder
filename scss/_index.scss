@@ -20,6 +20,7 @@
   }
 }
 
+/* Responsive Mobile */
 @media(max-width:767px){
 
   .layout-index{
@@ -34,4 +35,21 @@
 
   }
 
+}
+
+/* Responsive Tablet */
+@media(min-width: 768px) and (max-width: 1023px){
+  .layout-index{
+    .destacado{
+      .galeria{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+      }
+
+      .galeria img:last-child{
+        grid-column: 1/-1;
+        width: 50%;
+      }
+    }
+  }
 }

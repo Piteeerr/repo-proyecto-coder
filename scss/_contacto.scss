@@ -71,7 +71,23 @@ button:hover{
   background: #f8f8f8;
 }
 
-@media (min-width: 768px) {
+/* Responsive Tablet */
+@media (min-width: 768px) and (max-width: 1023px){
+  .contacto-container{
+    flex-direction: column;
+  }
+
+  .contacto-form{
+    flex: none;
+  }
+
+  .contacto-info{
+    flex: none;
+  }
+}
+
+/* Responsive Desktop */
+@media (min-width: 1023px) {
   .contacto-container {
     flex-direction: row;
   }

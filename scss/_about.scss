@@ -1,7 +1,5 @@
 @use "variables" as *;
 
-/* Hecho de una manera diferente a modo de practica, hago para mobile y el responsive es para desktop */
-
 .layout-about {
   padding: 2rem;
   display: flex;
@@ -53,7 +51,28 @@
   }
 }
 
-@media (min-width: 768px) {
+/* Responsive Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .layout-about {
+    .about-section {
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .about-parrafos {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .reverse {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+/* Responsive Desktop */
+@media (min-width: 1024px) {
   .layout-about {
     .about-section {
       flex-direction: row;
