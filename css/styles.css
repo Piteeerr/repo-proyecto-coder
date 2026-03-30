@@ -35,7 +35,7 @@ main {
 footer {
   background-color: lightgray;
   font-style: italic;
-  color: blueviolet;
+  color: #1E2418;
   text-align: center;
   padding: 1rem;
 }
@@ -67,14 +67,14 @@ footer {
   background-color: #2f3a2f;
 }
 .navbar .nav-link {
-  color: #e6d8a2;
+  color: #BFA44D;
 }
 .navbar .nav-link:hover {
   color: #bfae70;
 }
 
 .titulo {
-  color: #e6d8a2;
+  color: #BFA44D;
   text-align: center;
   font-weight: normal;
   letter-spacing: 2px;
