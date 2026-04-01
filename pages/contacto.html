@@ -73,23 +73,25 @@
       <section class="contacto-container">
         <div class="contacto-form">
           <h2 class="subTitulo">Contactanos</h2>
-          <p>Completá el formulario y nos comunicaremos con vos.</p>
+          <p>Realiza tu pedido completando este formulario y nos comunicaremos con vos.</p>
 
-          <form action="/submit" method="post">
+          <form action="https://formspree.io/f/xykbjrqj" method="POST">
             <div class="campo">
               <label for="nombre">Nombre</label>
-              <input type="text" name="nombre" id="nombre" />
+              <input type="text" name="nombre" id="nombre" required />
             </div>
 
             <div class="campo">
               <label for="email">E-mail</label>
-              <input type="email" name="email" id="email" />
+              <input type="email" name="email" id="email" required />
             </div>
 
             <div class="campo">
               <label for="mensaje">Mensaje</label>
-              <textarea name="mensaje" id="mensaje"></textarea>
+              <textarea name="mensaje" id="mensaje" required></textarea>
             </div>
+
+            <input type="hidden" name="_subject" value="¡Nuevo Pedido!" />
 
             <button type="submit">Enviar</button>
           </form>
@@ -99,7 +101,12 @@
           <h2 class="subTitulo">Información</h2>
 
           <p><strong>Teléfono:</strong> +54 9 11 5064-4921</p>
-          <p><strong>Instagram:</strong> @valeriajewelry.vj</p>
+          <p>
+            <strong>Instagram:</strong>
+            <a href="https://www.instagram.com/valeriajewelry.vj/"
+              >@valeriajewelry.vj</a
+            >
+          </p>
           <p>
             <strong>Medios de Pago:</strong> Mercado Pago - Transferencia
             Bancaria - Efectivo
@@ -108,7 +115,12 @@
       </section>
     </main>
     <footer>
-      <p>Instagram: @valeriajewelry.vj</p>
+      <p>
+        Instagram:
+        <a href="https://www.instagram.com/valeriajewelry.vj/"
+          >@valeriajewelry.vj</a
+        >
+      </p>
       <p>Teléfono: +54 9 11 5064-4921</p>
     </footer>
 
